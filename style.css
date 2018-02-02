@@ -1,0 +1,124 @@
+* {box-sizing: border-box}
+
+/* Set a style for all button */
+button {
+  background-color: Grey;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  opacity: 0.9;
+  font-size:14px;
+}
+button:hover {
+  opacity:1;
+}
+
+/*Set Style for text containers*/
+h1,h2{
+  text-align: center;
+  font-weight: bold;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 30px;
+}
+p{
+  text-align: center;
+}
+a{
+	color: Black;
+}
+
+/*Set Style for input container*/
+input:focus{
+  background-color:Gray;
+  outline: none;
+}
+input{
+	background-color: LightGrey;
+	font-size:14px;
+	padding: 12px;
+	margin: 5px 0 5px 0;
+	display: inline-block;
+	border: none;
+	width: 80%;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+/*Set Style for classes*/
+/* Align Small Square on big display */
+.smallSquare {
+	padding-top:10%;
+	width: 10%;
+	background-color:LightGray;
+}
+/* Align Big Square on a big display */
+.bigSquare {
+	margin-left:5%;
+	padding-top:45%;
+	width: 45%;
+	float: left;
+	background-color:LightGray;
+	display: inline-block;
+}
+/* Add padding to container elements */
+.container {
+  padding:3%;
+  width: 50%;
+  float: left;
+}
+
+
+
+/* Change styles for small screens (Phones)*/
+@media only screen and (max-device-width: 1080px) 
+{
+	.smallSquare {
+	padding-top:25vw;
+	width: 25vw;
+	background-color:LightGray;
+	}
+
+	/* Align Big Square on a small display */
+	.bigSquare {
+		margin-left:5vw;
+		margin-right:5vw;
+		padding-top:100vw; 
+		width: 90vw;
+		background-color:LightGray;
+		display: inline-block;
+	}
+	/* Add padding to container elements */
+	.container {
+	  margin-left:5vw;
+	  margin-right:5vw;
+	  width: 90vw;
+	}
+	/*Set Text Sizes*/
+	h1{
+	  font-size: 12vw;
+	  margin-left:5vw;
+	  margin-right:5vw;
+	}
+	h2{
+	  font-size: 9vw;
+	}
+	p{
+	  font-size: 3vw;
+	}
+	input,button{
+	  font-size: 5vw;
+	}
+	a{
+	  font-size: 2vw;
+	}
+	
+}
